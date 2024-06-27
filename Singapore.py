@@ -93,3 +93,27 @@ if submit_button:
         st.write('## :orange[Predicted selling price:] ',prediction[0])
     except:
         st.write(':orange[You have entered an invalid value]')
+     
+st.write(':blue[SKILLS TAKE AWAY FROM THIS PROJECT :]')
+st.markdown('Data Wrangling, EDA, Model Building, Model Deployment')
+st.markdown(':blue[Data Source :]')
+st.link_button("DOWNLOAD THE DATA SOURCE","https://beta.data.gov.sg/collections/189/view")
+st.write(':blue[STEPS INVOLVE :]')
+st.caption('''Data Collection and Preprocessing: Collect a dataset of resale flat transactions from the Singapore 
+           Housing and Development Board (HDB) for the years 1990 to Till Date. Preprocess the data to clean and 
+           structure it for machine learning''')
+
+st.caption('''Feature Engineering: Extract relevant features from the dataset, including town, flat type, storey 
+           range, floor area, flat model, and lease commence date. Create any additional features that may enhance 
+           prediction accuracy. ''')
+
+st.caption('''Model Selection and Training: Choose an appropriate machine learning model for regression 
+           (e.g., linear regression, decision trees, or random forests). Train the model on the historical data, 
+           using a portion of the dataset for training. ''')
+
+st.caption('''Model Evaluation: Evaluate the model's predictive performance using regression metrics such as Mean 
+           Absolute Error (MAE), Mean Squared Error (MSE), or Root Mean Squared Error (RMSE) and R2 Score. ''')
+
+st.caption('''Streamlit Web Application: Develop a user-friendly web application using Streamlit that allows users
+            to input details of a flat (town, flat type, storey range, etc.). Utilize the trained machine learning
+            model to predict the resale price based on user inputs. ''')
