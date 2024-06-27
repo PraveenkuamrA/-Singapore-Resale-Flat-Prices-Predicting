@@ -69,7 +69,7 @@ with st.form("my_form"):
 
 if submit_button: 
 
-    with open(r"C:\Users\user\Downloads\SingaporeResale.pkl", 'rb') as file:
+    with open(r'https://github.com/PraveenkuamrA/-Singapore-Resale-Flat-Prices-Predicting/blob/main/preprocessor11.pkl', 'rb') as file:
         guvi = pickle.load(file)
 
     with open(r"C:\Users\user\Downloads\preprocessor11.pkl", 'rb') as f:
