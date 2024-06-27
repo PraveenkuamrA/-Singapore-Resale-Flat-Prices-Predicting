@@ -72,7 +72,7 @@ if submit_button:
     with open(r'https://github.com/PraveenkuamrA/-Singapore-Resale-Flat-Prices-Predicting/blob/main/preprocessor11.pkl', 'rb') as file:
         guvi = pickle.load(file)
 
-    with open(r"C:\Users\user\Downloads\preprocessor11.pkl", 'rb') as f:
+    with open(r"https://github.com/PraveenkuamrA/-Singapore-Resale-Flat-Prices-Predicting/blob/main/preprocessor11.pkl", 'rb') as f:
         preprocessor = pickle.load(f)
 
     user_input=pd.DataFrame({
