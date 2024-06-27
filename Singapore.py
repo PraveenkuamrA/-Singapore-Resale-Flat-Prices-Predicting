@@ -1,6 +1,7 @@
 import streamlit as st
 import pickle
 import pandas as pd
+import os
 
 st.set_page_config(layout="wide")
 st.title('Singapore  Resale Flat Prices Predicting')
@@ -69,10 +70,12 @@ with st.form("my_form"):
 
 if submit_button: 
 
-    with open(r'https://github.com/PraveenkuamrA/-Singapore-Resale-Flat-Prices-Predicting/blob/main/preprocessor11.pkl', 'rb') as file:
-        guvi = pickle.load(file)
+    model_path = os.path.join(os.path.dirname(__file__), 'SingaporeResale.pkl')
 
-    with open(r"https://github.com/PraveenkuamrA/-Singapore-Resale-Flat-Prices-Predicting/blob/main/preprocessor11.pkl", 'rb') as f:
+    with open(model_path, 'rb') as file:
+        guvi = pickle.load(file)
+    model_path1 = os.path.join(os.path.dirname(__file__), 'preprocessor11.pkl')
+    with open(model_path1, 'rb') as f:
         preprocessor = pickle.load(f)
 
     user_input=pd.DataFrame({
