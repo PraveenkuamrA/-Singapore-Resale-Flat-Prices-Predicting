@@ -1,8 +1,6 @@
 import streamlit as st
 import pickle
 import pandas as pd
-from streamlit_option_menu import option_menu
-from PIL import Image
 
 st.set_page_config(layout="wide")
 st.title('Singapore  Resale Flat Prices Predicting')
