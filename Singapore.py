@@ -72,10 +72,10 @@ if submit_button:
 
     #model_path = os.path.join(os.path.dirname(__file__), 'SingaporeResale.pkl')
 
-    with open(r"C:\Users\user\OneDrive\Desktop\SingaporeResale.pkl", 'rb') as file:
+    with open(r"C:\\Users\\user\\OneDrive\\Desktop\\SingaporeResale.pkl", 'rb') as file:
         guvi = pickle.load(file)
     #model_path1 = os.path.join(os.path.dirname(__file__), 'preprocessor11.pkl')
-    with open(r"C:\Users\user\OneDrive\Desktop\preprocessor11.pkl", 'rb') as f:
+    with open(r"C:\\Users\\user\\OneDrive\\Desktop\\preprocessor11.pkl", 'rb') as f:
         preprocessor = pickle.load(f)
 
     user_input=pd.DataFrame({
